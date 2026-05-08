@@ -1,0 +1,83 @@
+.venue-hero {
+  position: relative;
+  overflow: clip;
+  min-height: 520px;
+  background:
+    radial-gradient(circle at 25% 20%, rgba(253, 139, 0, 0.14), transparent 25%),
+    linear-gradient(180deg, rgba(19, 19, 19, 0.55), rgba(19, 19, 19, 0.9)),
+    linear-gradient(135deg, rgba(173, 198, 255, 0.08), transparent 48%);
+}
+
+.venue-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 64px 64px;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.venue-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 24px;
+}
+
+.venue-main,
+.side-panel {
+  padding: 28px;
+  border-radius: var(--radius-lg);
+}
+
+.venue-main h2,
+.side-panel h3 {
+  margin: 0 0 14px;
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  line-height: 1.15;
+}
+
+.venue-main p,
+.side-panel p,
+.fact-card span {
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.venue-side {
+  display: grid;
+  gap: 24px;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.fact-card {
+  padding: 18px;
+  border: 1px solid var(--surface-line);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--radius-md);
+}
+
+.fact-card strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1080px) {
+  .venue-grid,
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .venue-main,
+  .side-panel {
+    padding: 20px;
+  }
+}
