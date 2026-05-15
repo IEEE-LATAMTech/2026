@@ -18,12 +18,21 @@ export default function HomePage({ onNavigate }) {
           </div>
 
           <div className="hero-layout">
-            <div>
-              <h1 className="hero-title">
-                ENGINEERING
-                <br />
-                <span>THE FUTURE.</span>
-              </h1>
+            <div className="hero-copy">
+              <div className="hero-heading">
+                <div className="hero-lockup" aria-label="LATAM TECH in partnership with IEEE Computer Society">
+                  <span className="hero-lockup-text">LATAM TECH</span>
+                  <span className="hero-lockup-divider" aria-hidden="true" />
+                  <img
+                    className="hero-lockup-logo"
+                    src="/images/IEEE-CS_LogoTM-white.png"
+                    alt="IEEE Computer Society"
+                  />
+                </div>
+                <h1 className="hero-title">
+                  ENGINEERING <span>THE FUTURE.</span>
+                </h1>
+              </div>
               <p className="hero-subtitle">
                 Convergence: Quantum, AI, trust, and decentralized systems in a
                 premium summit experience for Latin American technical leaders.
@@ -39,31 +48,31 @@ export default function HomePage({ onNavigate }) {
                   Explore Tracks
                 </button>
               </div>
-            </div>
 
-            <div className="hero-panel glass-card">
-              <div className="panel-kicker">Mission Profile</div>
-              <h2>High-performance learning, not passive conference theater.</h2>
-              <p>
-                The summit combines technical immersion, certification pathways,
-                and direct access to researchers, CTOs, and global partners.
-              </p>
-              <div className="signal-list">
-                <SignalCard
-                  accent="blue"
-                  title="Competency Building"
-                  text="Certification-oriented workshops with measurable outcomes."
-                />
-                <SignalCard
-                  accent="orange"
-                  title="Industry Engagement"
-                  text="Mentorship and direct collaboration with global engineering teams."
-                />
-                <SignalCard
-                  accent="cyan"
-                  title="Regional Impact"
-                  text="Infrastructure thinking tailored to LATAM realities and opportunities."
-                />
+              <div className="hero-panel glass-card">
+                <div className="panel-kicker">Mission Profile</div>
+                <h2>High-performance learning, not passive conference theater.</h2>
+                <p>
+                  The summit combines technical immersion, certification pathways,
+                  and direct access to researchers, CTOs, and global partners.
+                </p>
+                <div className="signal-list">
+                  <SignalCard
+                    accent="blue"
+                    title="Competency Building"
+                    text="Certification-oriented workshops with measurable outcomes."
+                  />
+                  <SignalCard
+                    accent="orange"
+                    title="Industry Engagement"
+                    text="Mentorship and direct collaboration with global engineering teams."
+                  />
+                  <SignalCard
+                    accent="cyan"
+                    title="Regional Impact"
+                    text="Infrastructure thinking tailored to LATAM realities and opportunities."
+                  />
+                </div>
               </div>
             </div>
           </div>
