@@ -21,7 +21,7 @@ export default function HomePage({ onNavigate }) {
             <div className="hero-copy">
               <div className="hero-heading">
                 <div className="hero-lockup" aria-label="LATAM TECH in partnership with IEEE Computer Society">
-                  <span className="hero-lockup-text">LATAM TECH</span>
+                  <span className="hero-lockup-text">LATAMTech</span>
                   <span className="hero-lockup-divider" aria-hidden="true" />
                   <img
                     className="hero-lockup-logo"

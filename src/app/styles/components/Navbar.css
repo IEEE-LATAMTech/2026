@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 16px;
   padding: 18px 0;
 }
@@ -19,6 +20,8 @@
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: -0.03em;
+  line-height: 1.05;
+  text-align: left;
 }
 
 .desktop-nav {
@@ -31,6 +34,7 @@
   display: flex;
   gap: 16px;
   align-items: center;
+  margin-left: auto;
 }
 
 .nav-link {
@@ -75,10 +79,24 @@
   .mobile-nav {
     display: grid;
   }
+
+  .brand {
+    max-width: calc(100% - 64px);
+  }
+
+  .mobile-nav .nav-link {
+    padding: 8px 0;
+  }
 }
 
 @media (max-width: 560px) {
+  .topbar-inner {
+    gap: 12px;
+    padding: 14px 0;
+  }
+
   .brand {
-    font-size: 0.98rem;
+    max-width: calc(100% - 56px);
+    font-size: 0.92rem;
   }
 }

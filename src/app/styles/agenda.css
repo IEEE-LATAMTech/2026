@@ -107,7 +107,23 @@
 }
 
 @media (max-width: 560px) {
+  .day-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-bottom: 14px;
+    margin-bottom: 20px;
+  }
+
+  .timeline {
+    padding-left: 18px;
+  }
+
   .timeline-card {
     padding: 20px 20px 20px 44px;
+  }
+
+  .timeline-card h3 {
+    font-size: 1.2rem;
   }
 }

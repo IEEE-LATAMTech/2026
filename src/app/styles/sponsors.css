@@ -74,9 +74,18 @@
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .sponsor-cta .cta-actions {
+    width: 100%;
+  }
 }
 
 @media (max-width: 560px) {
+  .tier-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .sponsor-card,
   .sponsor-cta {
     padding: 20px;

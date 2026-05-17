@@ -76,6 +76,10 @@
 }
 
 @media (max-width: 560px) {
+  .venue-hero {
+    min-height: 420px;
+  }
+
   .venue-main,
   .side-panel {
     padding: 20px;
