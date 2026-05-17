@@ -20,18 +20,13 @@ export default function HomePage({ onNavigate }) {
           <div className="hero-layout">
             <div className="hero-copy">
               <div className="hero-heading">
-                <div className="hero-lockup" aria-label="LATAM TECH in partnership with IEEE Computer Society">
-                  <span className="hero-lockup-text">LATAMTech</span>
-                  <span className="hero-lockup-divider" aria-hidden="true" />
+                <div className="hero-lockup" aria-label="LATAMTech and IEEE Computer Society">
                   <img
                     className="hero-lockup-logo"
-                    src="/images/IEEE-CS_LogoTM-white.png"
-                    alt="IEEE Computer Society"
+                    src="/images/logo.png"
+                    alt="LATAMTech and IEEE Computer Society"
                   />
                 </div>
-                <h1 className="hero-title">
-                  ENGINEERING <span>THE FUTURE.</span>
-                </h1>
               </div>
               <p className="hero-subtitle">
                 Convergence: Quantum, AI, trust, and decentralized systems in a
