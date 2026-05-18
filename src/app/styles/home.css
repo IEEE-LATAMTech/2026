@@ -1,7 +1,7 @@
 .hero-section {
   position: relative;
   overflow: clip;
-  padding: 104px 0 88px;
+  padding: 68px 0 28px;
 }
 
 .hero-backdrop,
@@ -33,45 +33,72 @@
   z-index: 1;
 }
 
+.hero-section .eyebrow-row {
+  margin-top: -24px;
+  margin-bottom: 10px;
+}
+
 .hero-layout {
+  display: block;
+}
+
+.hero-copy {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.hero-heading {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 32px;
-  align-items: start;
+  justify-items: center;
+  gap: 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.hero-title {
-  margin: 0;
-  font-size: clamp(3.5rem, 9vw, 7rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 0.96;
+.hero-lockup {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 680px);
+  padding: 0;
+  margin-bottom: 40px;
 }
 
-.hero-title span {
-  color: var(--blue);
+.hero-lockup-logo {
+  display: block;
+  width: min(100%, 600px);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 40px rgba(0, 218, 243, 0.12));
 }
 
 .hero-subtitle {
   max-width: 760px;
   font-size: 1.2rem;
-  margin: 24px 0 32px;
+  margin: 0 auto 32px;
   color: var(--text-muted);
   line-height: 1.65;
+  text-align: center;
 }
 
 .hero-meta {
   flex-wrap: wrap;
   margin-bottom: 32px;
+  justify-content: center;
+}
+
+.hero-actions {
+  justify-content: center;
 }
 
 .hero-panel {
-  padding: 28px;
+  margin-top: 104px;
+  padding: 34px;
   border-radius: var(--radius-lg);
 }
 
 .hero-panel h2 {
-  margin: 0 0 14px;
+  margin: 12px 0 18px;
   font-size: clamp(1.35rem, 2vw, 2rem);
   line-height: 1.15;
 }
@@ -89,6 +116,11 @@
 .feature-grid,
 .route-grid {
   flex-wrap: wrap;
+}
+
+.hero-panel .signal-list {
+  margin-top: 32px;
+  gap: 24px;
 }
 
 .stats-grid {
@@ -117,7 +149,6 @@
 }
 
 @media (max-width: 1080px) {
-  .hero-layout,
   .stats-grid {
     grid-template-columns: 1fr;
   }
@@ -125,10 +156,48 @@
 
 @media (max-width: 820px) {
   .hero-section {
-    padding: 88px 0 72px;
+    padding: 56px 0 28px;
+  }
+
+  .hero-heading {
+    margin-bottom: 24px;
+  }
+
+  .hero-lockup {
+    width: min(100%, 500px);
+  }
+
+  .hero-lockup-logo {
+    width: 100%;
   }
 
   .hero-subtitle {
     font-size: 1rem;
+  }
+
+  .hero-panel {
+    margin-top: 72px;
+    padding: 28px;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-lockup {
+    width: min(100%, 320px);
+  }
+
+  .hero-lockup-logo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-heading {
+    gap: 12px;
+  }
+
+  .hero-panel {
+    margin-top: 52px;
+    padding: 24px;
   }
 }

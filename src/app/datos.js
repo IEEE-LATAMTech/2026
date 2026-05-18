@@ -4,6 +4,7 @@ export const navItems = [
   { label: "Agenda", href: "/agenda" },
   { label: "Sponsors", href: "/sponsors" },
   { label: "Venue", href: "/venue" },
+  { label: "80th Anniversary", href: "/anniversary" },
 ];
 
 export const stats = [

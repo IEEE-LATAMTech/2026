@@ -20,6 +20,10 @@ body {
   color: var(--text-main);
 }
 
+img {
+  max-width: 100%;
+}
+
 button,
 a,
 input,

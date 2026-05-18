@@ -6,6 +6,7 @@ import TracksPage from "@/app/tracks/page";
 import AgendaPage from "@/app/agenda/page";
 import SponsorsPage from "@/app/sponsors/page";
 import VenuePage from "@/app/venue/page";
+import AnniversaryPage from "@/app/anniversary/page";
 import "@/app/styles/global.css";
 
 const ROUTES = {
@@ -14,6 +15,7 @@ const ROUTES = {
   "/agenda": AgendaPage,
   "/sponsors": SponsorsPage,
   "/venue": VenuePage,
+  "/anniversary": AnniversaryPage,
 };
 
 function getCurrentPath() {
