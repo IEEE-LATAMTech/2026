@@ -80,7 +80,7 @@ export const trackCards = [
 export const agendaDays = [
   {
     title: "Day 1: Vision",
-    date: "October 14, 2026",
+    date: "September 22, 2026",
     status: "Live tracks",
     sessions: [
       {
@@ -119,7 +119,7 @@ export const agendaDays = [
   },
   {
     title: "Day 2: Deep Dive",
-    date: "October 15, 2026",
+    date: "September 23, 2026",
     status: "Certification labs",
     sessions: [
       {

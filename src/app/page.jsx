@@ -33,7 +33,7 @@ export default function HomePage({ onNavigate }) {
                 premium summit experience for Latin American technical leaders.
               </p>
               <div className="hero-meta">
-                <MetaPill icon="calendar_today" label="September 22-23, 2026" />
+                <MetaPill icon="calendar_today" label="Date & Time: [22-23 ] September, 2026" />
                 <MetaPill icon="location_on" label="San Jose, Costa Rica" />
                 <MetaPill icon="memory" label="24h hands-on lab format" />
               </div>
