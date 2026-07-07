@@ -22,7 +22,7 @@
   left: -10%;
   width: 70%;
   height: 540px;
-  background: radial-gradient(circle at top, rgba(253, 139, 0, 0.18), transparent 62%);
+  background: radial-gradient(circle at top, rgba(243, 112, 33, 0.18), transparent 62%);
 }
 
 .anniversary-ambient-blue {
@@ -30,7 +30,7 @@
   bottom: 0;
   width: 72%;
   height: 700px;
-  background: radial-gradient(circle at right, rgba(173, 198, 255, 0.12), transparent 58%);
+  background: radial-gradient(circle at right, rgba(0, 212, 255, 0.12), transparent 58%);
 }
 
 .anniversary-hero,
@@ -57,8 +57,8 @@
 
 .anniversary-hero::after {
   background:
-    radial-gradient(circle at top, rgba(253, 139, 0, 0.14), transparent 28%),
-    linear-gradient(135deg, rgba(173, 198, 255, 0.06), transparent 52%);
+    radial-gradient(circle at top, rgba(243, 112, 33, 0.14), transparent 28%),
+    linear-gradient(135deg, rgba(0, 212, 255, 0.06), transparent 52%);
 }
 
 .anniversary-hero-content {
@@ -74,7 +74,7 @@
   width: min(100%, 260px);
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 0 22px rgba(253, 139, 0, 0.28));
+  filter: drop-shadow(0 0 22px rgba(243, 112, 33, 0.28));
 }
 
 .anniversary-badge {
@@ -84,8 +84,8 @@
   min-height: 44px;
   padding: 0 18px;
   border-radius: 999px;
-  border: 1px solid rgba(253, 139, 0, 0.5);
-  background: rgba(253, 139, 0, 0.12);
+  border: 1px solid rgba(243, 112, 33, 0.5);
+  background: rgba(243, 112, 33, 0.12);
   color: var(--orange-strong);
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -99,8 +99,8 @@
 
 .anniversary-badge-soft {
   width: fit-content;
-  border-color: rgba(173, 198, 255, 0.35);
-  background: rgba(173, 198, 255, 0.08);
+  border-color: rgba(0, 212, 255, 0.35);
+  background: rgba(0, 212, 255, 0.08);
   color: var(--blue);
 }
 
@@ -189,7 +189,7 @@
 }
 
 .anniversary-guest::after {
-  background: linear-gradient(90deg, rgba(173, 198, 255, 0.03), transparent 50%);
+  background: linear-gradient(90deg, rgba(0, 212, 255, 0.03), transparent 50%);
 }
 
 .anniversary-guest-visual {
@@ -199,7 +199,7 @@
   aspect-ratio: 1;
   overflow: hidden;
   border-radius: var(--radius-lg);
-  border: 1px solid rgba(173, 198, 255, 0.28);
+  border: 1px solid rgba(0, 212, 255, 0.28);
   box-shadow: var(--shadow-blue);
 }
 

@@ -3,9 +3,9 @@
   overflow: clip;
   min-height: 520px;
   background:
-    radial-gradient(circle at 25% 20%, rgba(253, 139, 0, 0.14), transparent 25%),
-    linear-gradient(180deg, rgba(19, 19, 19, 0.55), rgba(19, 19, 19, 0.9)),
-    linear-gradient(135deg, rgba(173, 198, 255, 0.08), transparent 48%);
+    radial-gradient(circle at 25% 20%, rgba(243, 112, 33, 0.14), transparent 25%),
+    linear-gradient(180deg, rgba(11, 18, 33, 0.55), rgba(11, 18, 33, 0.9)),
+    linear-gradient(135deg, rgba(0, 212, 255, 0.08), transparent 48%);
 }
 
 .venue-overlay {
