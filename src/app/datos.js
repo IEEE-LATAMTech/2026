@@ -31,18 +31,48 @@ export const trackCards = [
     ],
   },
   {
-    slug: "trust-security",
-    code: "02 // TRUST_SECURITY",
-    title: "Trust & Cybersecurity Systems",
+    slug: "cybersecurity-smart-buildings",
+    code: "02 // CYBERSECURITY",
+    title: "Una introducci\u00f3n a la ciberseguridad de edificios inteligentes cr\u00edticos",
     accent: "cyan",
     description:
-      "Security-by-design for critical systems, post-quantum cryptography, and resilient public infrastructure.",
-    tags: ["Zero trust", "Cryptography"],
-    partner: "IBM Security / CERT-LATAM / Akamai",
-    objectives: [
-      "Design post-quantum secure architectures for sovereign data platforms.",
-      "Harden distributed systems against advanced and state-level threats.",
-      "Deploy privacy-preserving data exchange across regulated ecosystems.",
+      "Bloques virtuales as\u00edncronos sobre ciberseguridad aplicada a edificios inteligentes, sistemas de control y el protocolo BACnet.",
+    tags: ["Edificios inteligentes", "BACnet", "Python / Docker"],
+    partner: "Modalidad: Bloques virtuales as\u00edncronos.",
+    speaker: {
+      name: "Herson",
+      role: "Adjunct Professor and Researcher, Costa Rica Institute of Technology (TEC)",
+      image: "/images/speakers/herson.jpg",
+      bio: "Herson is an adjunct professor and researcher at the Costa Rica Institute of Technology (TEC), where he is part of the management and teaching staff of the Cybersecurity Master's Program. He teaches undergraduate and graduate courses in cybersecurity and leads TEC's cybersecurity research group, El Hackatorio. He earned his PhD in Cybersecurity from the University of Twente, The Netherlands. His research collaborations with both industry and academic partners include the Siemens CERT, Singapore University of Technology and Design (SUTD), CISPA Helmholtz Center for Information Security, among others.",
+    },
+    sections: [
+      {
+        label: "Lista de temas",
+        items: [
+          "Introducci\u00f3n al concepto de edificios inteligentes.",
+          "Ciberseguridad aplicada a edificios inteligentes.",
+          "Requerimientos de ciberseguridad.",
+          "Amenazas de ciberseguridad.",
+          "El protocolo BACnet (ISO 16484-5).",
+          "Herramientas de defensa para edificios inteligentes.",
+        ],
+      },
+      {
+        label: "Perfil de ingreso",
+        items: [
+          "Conocimiento general en computaci\u00f3n, ciberseguridad o sistemas de control.",
+          "Conocimientos b\u00e1sicos en el lenguaje de programaci\u00f3n Python.",
+          "Conocimientos b\u00e1sicos de Docker.",
+        ],
+      },
+      {
+        label: "Perfil de salida",
+        items: [
+          "Fundamentos de ciberseguridad en edificios inteligentes.",
+          "Conocimientos en el protocolo de comunicaci\u00f3n BACnet (ISO 16484-5).",
+          "Capacidad de ejecutar ciberataques contra edificios inteligentes emulados.",
+        ],
+      },
     ],
   },
   {
