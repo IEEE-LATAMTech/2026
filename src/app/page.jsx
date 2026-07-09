@@ -23,8 +23,8 @@ export default function HomePage({ onNavigate }) {
                 <div className="hero-lockup" aria-label="LATAMTech and IEEE Computer Society">
                   <img
                     className="hero-lockup-logo"
-                    src="/images/logo.png"
-                    alt="LATAMTech and IEEE Computer Society"
+                    src="/images/latamtech-hero.png"
+                    alt="IEEE CS LATAMTech Costa Rica 2026 and IEEE Computer Society 80th anniversary"
                   />
                 </div>
               </div>
