@@ -1,4 +1,6 @@
 export default function TrackCard({ track }) {
+  const speakers = track.speakers ?? (track.speaker ? [track.speaker] : []);
+
   return (
     <article className={`glass-card track-card accent-${track.accent}`}>
       <div className="track-side">
@@ -13,17 +15,21 @@ export default function TrackCard({ track }) {
           ))}
         </div>
         <div className="partner-note">{track.partner}</div>
-        {track.speaker ? (
-          <div className="track-speaker">
-            <div className="block-label">Speaker</div>
-            <div className="track-speaker-profile">
-              <img src={track.speaker.image} alt={track.speaker.name} />
-              <div>
-                <strong>{track.speaker.name}</strong>
-                <span>{track.speaker.role}</span>
+        {speakers.length > 0 ? (
+          <div className="track-speakers">
+            <div className="block-label">Speakers</div>
+            {speakers.map((speaker) => (
+              <div key={speaker.name} className="track-speaker">
+                <div className="track-speaker-profile">
+                  <img src={speaker.image} alt={speaker.name} />
+                  <div>
+                    <strong>{speaker.name}</strong>
+                    <span>{speaker.role}</span>
+                  </div>
+                </div>
+                <p>{speaker.bio}</p>
               </div>
-            </div>
-            <p>{track.speaker.bio}</p>
+            ))}
           </div>
         ) : null}
       </div>

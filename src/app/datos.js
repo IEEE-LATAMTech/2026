@@ -16,23 +16,8 @@ export const stats = [
 
 export const trackCards = [
   {
-    slug: "quantum-hpc",
-    code: "01 // QUANTUM_HPC",
-    title: "Quantum & High Performance Computing",
-    accent: "blue",
-    description:
-      "Hybrid compute architectures, quantum-readiness, and scalable simulation pipelines for regional infrastructure.",
-    tags: ["Quantum circuits", "Scalable architecture"],
-    partner: "CERN / IEEE Quantum / IBM Research",
-    objectives: [
-      "Engineer error-corrected quantum workflows for emerging regional clusters.",
-      "Move classical HPC workloads into hybrid quantum-classical pipelines.",
-      "Prototype resilient compute architectures for research-heavy environments.",
-    ],
-  },
-  {
     slug: "cybersecurity-smart-buildings",
-    code: "02 // CYBERSECURITY",
+    code: "01 // CYBERSECURITY",
     title: "Una introducci\u00f3n a la ciberseguridad de edificios inteligentes cr\u00edticos",
     accent: "cyan",
     description:
@@ -76,18 +61,90 @@ export const trackCards = [
     ],
   },
   {
-    slug: "ai-patterns",
-    code: "03 // AI_PATTERN",
-    title: "AI & Pattern Analysis",
+    slug: "deep-learning-time-series",
+    code: "02 // DEEP_LEARNING",
+    title: "Aprendizaje Profundo para Pronósticos de Series de Tiempo",
     accent: "orange",
     description:
-      "Applied AI beyond hype, with efficient models, governance patterns, and deployment for constrained contexts.",
-    tags: ["Neural nets", "Generative AI"],
-    partner: "Intel / Microsoft / NVIDIA AI",
-    objectives: [
-      "Train and adapt multimodal systems for regional and multilingual use cases.",
-      "Build federated and privacy-aware AI systems for health and public services.",
-      "Apply ethical AI controls in production-grade environments.",
+      "Taller práctico para desarrollar modelos de aprendizaje profundo orientados al pronóstico de series de tiempo, desde la exploración de datos hasta la evaluación de resultados.",
+    tags: ["Series de tiempo", "LSTM / TCN", "Forecasting"],
+    partner: "Tecnológico de Costa Rica (TEC)",
+    speaker: {
+      name: "Martín Solís",
+      role: "Profesor e investigador, Tecnológico de Costa Rica",
+      image: "/images/speakers/martin-solis.jpg",
+      bio: "Es profesor e investigador del Tecnológico de Costa Rica. Estadístico de formación con Maestrías en Estadística y Ciencia de Datos. Doctor en Gestión Pública y Ciencias Empresariales. Su trabajo de investigación se centra en las áreas de pronósticos y análisis de series de tiempo. También ha trabajado en el desarrollo y aplicación de modelos predictivos con aprendizaje automático para resolver problemas en diferentes áreas, como detección anticipada de deserción estudiantil, predicciones en agricultura usando datos de sensores y simplificación de textos con grandes modelos de lenguaje, entre otros.",
+    },
+    sections: [
+      {
+        label: "Objetivo",
+        items: [
+          "Desarrollar las competencias prácticas necesarias para diseñar, entrenar y evaluar modelos de aprendizaje profundo orientados al pronóstico de series de tiempo.",
+        ],
+      },
+      {
+        label: "Contenido",
+        items: [
+          "Introducción a series de tiempo: componentes, caracterización, descomposición, gráficas de estacionalidad, autocorrelogramas y manejo de datos perdidos.",
+          "Preparación de datos: normalización, transformación a problema supervisado y división de datos.",
+          "Entrenamiento y optimización de redes: arquitecturas LSTM y TCN, y estrategias de optimización.",
+          "Evaluación y visualización de resultados.",
+        ],
+      },
+      {
+        label: "Requisitos",
+        items: ["Conocimientos básicos de aprendizaje automático."],
+      },
+    ],
+  },
+  {
+    slug: "llm-engineering",
+    code: "03 // LLM_ENGINEERING",
+    title: "Introducción a la Ingeniería de Modelos Grandes de Lenguaje",
+    accent: "cyan",
+    description:
+      "Laboratorio temático corto sobre fundamentos del Procesamiento del Lenguaje Natural (PLN) y la aplicación práctica de Modelos Grandes de Lenguaje (LLMs) en tareas de clasificación de textos.",
+    tags: ["PLN", "BERT / Embeddings", "Zero-shot / Few-shot"],
+    partner: "Laboratorio temático corto",
+    speakers: [
+      {
+        name: "Saul Calderón Ramírez",
+        role: "Coordinador de Ciencias de los Datos, Spartan Approach; coordinador de PARMA-Group, TEC",
+        image: "/images/speakers/saul-calderon.png",
+        bio: "• Ph. D. en Ciencias de la computación y sistemas inteligentes, Universidad De Montfort, Reino Unido, becado por la Universidad De Montfort. • Magister Scientae en Ingeniería Eléctrica con énfasis en sistemas digitales, Universidad de Costa Rica (UCR). • Bachiller en Computación e Informática, Universidad de Costa Rica. • Coordinador departamento ciencias de los datos, Spartan Approach. • Especialidades: Procesamiento digital de señales (sonido, imágenes, video), reconocimiento de patrones, aprendizaje automático y computación paralela. • Coordinador del PAttern Recognition and Machine Learning Group (PARMA-Group) en el TEC. • Publicaciones: Alrededor de 40 artículos en conferencias internacionales de alto renombre como el ICIP y el NIPS y revistas de primer y segundo cuartil, en el área de procesamiento digital de señales, reconocimiento de patrones y aprendizaje profundo. • Ha impartido cursos en temas de aprendizaje automático, redes neuronales, aprendizaje profundo, programación y electrónica. Ello en los programas de Maestría en Ciencias de la Computacion (TEC), Bachillerato Ingeniería en Computacion (TEC), programa de Ciencias de Datos (TEC), Ingeniería en Computadores (TEC), Ingeniería Eléctrica (UCR) y ha sido profesor invitado en la Universidad De Montfort (Reino Unido) y la Universidad de Buenos Aires (Argentina) • Experiencia profesional: Intel: investigación y desarrollo en análisis de imágenes, Search Technologies: consultor en Big Data, Spartan Approach: inteligencia artificial y ciencias de datos, Investigador en el Centro de Investigación en Tecnologías de la Información y comunicación (UCR, CITIC), grupo de Procesamiento de Imágenes y Visión Computacional (UBA, Argentina), entre otros.",
+      },
+      {
+        name: "Esteban Villalobos Gómez",
+        role: "AI & LLM Architecture Technical Manager, Accenture",
+        image: "/images/speakers/esteban-villalobos.png",
+        bio: "Esteban Villalobos Gómez es un ingeniero de software y consultor con más de 20 años de trayectoria, especializado en ingeniería de Machine Learning, procesamiento de datos a gran escala y arquitecturas de alto rendimiento. Actualmente se desempeña como AI & LLM Architecture Technical Manager en Accenture, donde lidera el diseño e implementación de sistemas agénticos para clientes que son corporaciones globales, permitiendo la automatización de análisis de datos complejos y la optimización de procesos críticos. Su experiencia destaca por la orquestación de soluciones avanzadas de IA Generativa (RAG) utilizando tecnologías de vanguardia como LangGraph, Databricks, Azure OpenAI y arquitecturas robustas en la nube sobre AWS y Azure.\n\nEn el ámbito académico, Esteban posee una sólida formación que incluye una Maestría en Ciencias de la Computación (Magna Cum Laude) del Instituto Tecnológico de Costa Rica (ITCR), donde desarrolló una tesis de investigación sobre la estimación de incertidumbre en modelos generativos para el proyecto LHCb en el CERN. Complementa su perfil con posgrados en Ciencia de Datos y Big Data, además de su título base en Ingeniería en Computación del ITCR.\n\nA lo largo de su carrera, ha liderado equipos multidisciplinarios en la entrega de productos tecnológicos de alto impacto, desde sistemas de monitoreo de tuberías de datos (ETL) hasta microservicios escalables en Python, Java y C#. Su enfoque profesional combina una profunda pericia técnica en el manejo de datos estructurados y no estructurados con una visión estratégica para guiar a las organizaciones hacia la próxima generación de iniciativas de IA. Actualmente, se enfoca en la evolución de arquitecturas de modelos de lenguaje (LLM) y la creación de agentes digitales inteligentes que transforman la competitividad empresarial a escala global.",
+      },
+      {
+        name: "Danny Xie Li",
+        role: "Doctorando en Inteligencia Artificial y High Performance Computing, Universidad de Luxemburgo",
+        image: "/images/speakers/danny-xie-li.png",
+        bio: "Estudiante de Doctorado (Ph.D.) en Inteligencia Artificial y Computación de Alto Rendimiento (High Performance Computing) en la Universidad de Luxemburgo, donde forma parte del grupo de investigación Trustworthy AI for Science de la Facultad de Ciencias, Tecnología y Medicina (Faculty of Science, Technology and Medicine). Obtuvo el grado de Bachillerato en Ingeniería en Computación en el Instituto Tecnológico de Costa Rica (TEC), Cartago, Costa Rica, en 2021, y el grado de Maestría en Computación con énfasis en Inteligencia Artificial en la misma institución en 2026. Cuenta con experiencia como investigador en el Centro Nacional de Alta Tecnología (CeNAT), el Pattern Recognition and Machine Learning (PARMA-Group) Research Group del Instituto Tecnológico de Costa Rica, el Imagine Lab de la Universidad de Costa Rica y el Computer Vision Laboratory de la Universidad de Ljubljana. Su investigación se ha centrado en inteligencia artificial, aprendizaje automático, visión por computadora, procesamiento de lenguaje natural y ciencia de datos. Entre sus contribuciones destacan el desarrollo de métodos de detección y seguimiento múltiples de objetos para aplicaciones de agricultura de precisión, así como modelos de lenguaje de gran escala para mejorar la accesibilidad del idioma español y otras aplicaciones. En el ámbito profesional, se ha desempeñado como ingeniero en ciencia de datos en Accenture, participando en el diseño e implementación de soluciones de inteligencia artificial, aprendizaje automático y analítica avanzada para diversos sectores industriales. Sus principales líneas de investigación incluyen visión por computadora, procesamiento de lenguaje natural, aprendizaje profundo (Deep Learning), aprendizaje de representaciones, análisis de datos no estructurados e inteligencia artificial confiable (Trustworthy Artificial Intelligence).",
+      },
+    ],
+    sections: [
+      {
+        label: "Contexto",
+        items: [
+          "El dataset utilizado proviene de una investigación realizada por estudiantes de maestría y doctorado, quienes desarrollaron el corpus FEINA como parte de sus trabajos sobre simplificación de textos financieros para personas con discapacidad visual. Este recurso permite trabajar con datos reales y de impacto social.",
+          "El laboratorio combina teoría con práctica intensiva utilizando Python, scikit-learn, Hugging Face Transformers y Jupyter Notebooks, y culmina con un análisis estadístico para determinar qué enfoque es más efectivo en la detección de complejidad textual.",
+        ],
+      },
+      {
+        label: "Objetivos",
+        items: [
+          "Comprender el algoritmo de clasificación binaria de regresión logística y reconocer cuándo puede ser más eficiente y eficaz que usar un modelo grande de lenguaje.",
+          "Generar representaciones densas de texto utilizando modelos de embeddings preentrenados como BERT y comprender las ventajas de las representaciones contextuales sobre las basadas en frecuencia.",
+          "Diseñar pipelines de clasificación que integren métodos tradicionales y arquitecturas modernas de LLMs, evaluando su desempeño con métricas apropiadas.",
+          "Aplicar técnicas de prompting zero-shot y few-shot para aprovechar el conocimiento implícito de los LLMs sin necesidad de entrenamiento supervisado extenso.",
+          "Realizar evaluaciones experimentales robustas, incluyendo validación cruzada con múltiples corridas, particiones estratificadas y pruebas estadísticas de comparación de tratamientos.",
+          "Interpretar y comunicar resultados mediante tablas, gráficos de convergencia, superficies de decisión y análisis cualitativo de ejemplos de clasificación.",
+        ],
+      },
     ],
   },
   {
@@ -193,14 +250,21 @@ export const sponsorTiers = [
     tier: "Sponsor",
     accent: "blue",
     companies: ["IEEE Computer Society"],
+    logos: {
+      "IEEE Computer Society": "/images/sponsors/ieee-computer-society.png",
+    },
   },
   {
     tier: "Partners",
     accent: "cyan",
     companies: [
       "Dojo",
-      "Unidad de Posgrados de Computacion del TEC Costa Rica",
+      "Unidad de Posgrados de Computación del TEC Costa Rica",
     ],
+    logos: {
+      "Unidad de Posgrados de Computación del TEC Costa Rica":
+        "/images/sponsors/unidad-posgrados-computacion.png",
+    },
   },
 ];
 

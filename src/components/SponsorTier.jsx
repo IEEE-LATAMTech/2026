@@ -8,7 +8,15 @@ export default function SponsorTier({ tier }) {
       <div className="sponsor-grid">
         {tier.companies.map((company) => (
           <article key={company} className={`glass-card sponsor-card accent-${tier.accent}`}>
-            <div className="mock-logo">{company.slice(0, 2).toUpperCase()}</div>
+            {tier.logos?.[company] ? (
+              <img
+                className="sponsor-logo"
+                src={tier.logos[company]}
+                alt={`${company} logo`}
+              />
+            ) : (
+              <div className="mock-logo">{company.slice(0, 2).toUpperCase()}</div>
+            )}
             <h3>{company}</h3>
             <p>
               High-visibility placement across summit materials, technical
