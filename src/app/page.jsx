@@ -1,5 +1,4 @@
 import { stats } from "@/app/datos";
-import FeatureCard from "@/components/FeatureCard";
 import MetaPill from "@/components/MetaPill";
 import RouteCard from "@/components/RouteCard";
 import SectionHeader from "@/components/SectionHeader";
@@ -29,11 +28,11 @@ export default function HomePage({ onNavigate }) {
                 </div>
               </div>
               <p className="hero-subtitle">
-                Convergence: Quantum, AI, trust, and decentralized systems in a
+                Convergence: Cybersecurity, AI, trust, and decentralized systems in a
                 premium summit experience for Latin American technical leaders.
               </p>
               <div className="hero-meta">
-                <MetaPill icon="calendar_today" label="Date & Time: [22-23 ] September, 2026" />
+                <MetaPill icon="calendar_today" label="Dates: September 22-23, 2026" />
                 <MetaPill icon="location_on" label="San Jose, Costa Rica" />
                 <MetaPill icon="memory" label="24h hands-on lab format" />
               </div>
@@ -74,32 +73,6 @@ export default function HomePage({ onNavigate }) {
         </div>
       </section>
 
-      <section className="section shell">
-        <SectionHeader
-          eyebrow="Design Logic"
-          title="A command-center visual language"
-          text="Obsidian surfaces, glassmorphism layers, blue-first signaling, and precise spacing rules create a premium engineering aesthetic."
-        />
-
-        <div className="feature-grid">
-          <FeatureCard
-            accent="blue"
-            title="Engineering Excellence"
-            text="12-column rhythm, strong alignment, and quiet surfaces that let high-value content lead."
-          />
-          <FeatureCard
-            accent="orange"
-            title="Kinetic Energy"
-            text="Orange accents and scanning lines signal action, urgency, and movement through the system."
-          />
-          <FeatureCard
-            accent="cyan"
-            title="Technical Precision"
-            text="Caps labels, data rails, and crisp radii echo schematics and lab interfaces."
-          />
-        </div>
-      </section>
-
       <section className="section section-alt">
         <div className="shell">
           <SectionHeader
@@ -121,9 +94,9 @@ export default function HomePage({ onNavigate }) {
 
       <section className="section shell">
         <SectionHeader
-          eyebrow="Entry Points"
-          title="Core pages in the React project"
-          text="Each route is designed as a focused experience instead of a single overloaded landing page."
+          eyebrow="Explore the Summit"
+          title="Plan your summit experience"
+          text="Move from technical tracks to the event agenda, partner opportunities, and venue details."
         />
 
         <div className="route-grid">

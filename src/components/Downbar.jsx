@@ -11,15 +11,15 @@ export default function Downbar() {
         </div>
         <div>
           <div className="footer-title">Resources</div>
-          <a href="#0">About IEEE</a>
-          <a href="#0">Privacy Policy</a>
-          <a href="#0">Contact Support</a>
+          <a href="/tracks">Tracks</a>
+          <a href="/agenda">Agenda</a>
+          <a href="/venue">Venue</a>
         </div>
         <div>
           <div className="footer-title">Participation</div>
-          <a href="#0">Sponsorship Prospectus</a>
-          <a href="#0">Speaker Portal</a>
-          <a href="#0">Attendee Portal</a>
+          <a href="/sponsors">Sponsors</a>
+          <a href="/anniversary">80th Anniversary</a>
+          <a href="/">Home</a>
         </div>
         <div>
           <div className="footer-title">Status</div>
