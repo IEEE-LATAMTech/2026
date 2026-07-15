@@ -1,4 +1,8 @@
-import { stats } from "@/app/datos";
+import {
+  clasypcsBenefits,
+  eventPhases,
+  registrationPrices,
+} from "@/app/datos";
 import MetaPill from "@/components/MetaPill";
 import RouteCard from "@/components/RouteCard";
 import SectionHeader from "@/components/SectionHeader";
@@ -33,38 +37,47 @@ export default function HomePage({ onNavigate }) {
               </p>
               <div className="hero-meta">
                 <MetaPill icon="calendar_today" label="Dates: September 22-23, 2026" />
-                <MetaPill icon="location_on" label="San Jose, Costa Rica" />
-                <MetaPill icon="memory" label="24h hands-on lab format" />
+                <MetaPill icon="location_on" label="San José, Costa Rica" />
+                <MetaPill icon="memory" label="Two-phase: virtual + in-person" />
               </div>
               <div className="hero-actions">
-                <button className="button button-primary">Register Interest</button>
+                <button
+                  className="button button-primary"
+                  onClick={() =>
+                    document
+                      .getElementById("registration")
+                      ?.scrollIntoView({ behavior: "smooth" })
+                  }
+                >
+                  View Pricing
+                </button>
                 <button className="button button-secondary" onClick={() => onNavigate("/tracks")}>
                   Explore Tracks
                 </button>
               </div>
 
               <div className="hero-panel glass-card">
-                <div className="panel-kicker">Mission Profile</div>
-                <h2>High-performance learning, not passive conference theater.</h2>
+                <div className="panel-kicker">What This Is</div>
+                <h2>Not a workshop on the basics. A real scientific problem - solved.</h2>
                 <p>
-                  The summit combines technical immersion, certification pathways,
-                  and direct access to researchers, CTOs, and global partners.
+                  You will not sit through introductory sessions. The Summit gives
+                  you a genuine open problem and two focused days to move it forward.
                 </p>
                 <div className="signal-list">
                   <SignalCard
                     accent="blue"
-                    title="Competency Building"
-                    text="Certification-oriented workshops with measurable outcomes."
+                    title="Frontier-Grade"
+                    text="Open problems drawn from active research, where clean answers do not yet exist."
                   />
                   <SignalCard
                     accent="orange"
-                    title="Industry Engagement"
-                    text="Mentorship and direct collaboration with global engineering teams."
+                    title="Hands in the Work"
+                    text="Real environments, datasets, and tooling: build, run, break, and iterate."
                   />
                   <SignalCard
                     accent="cyan"
-                    title="Regional Impact"
-                    text="Infrastructure thinking tailored to LATAM realities and opportunities."
+                    title="Depth Over Breadth"
+                    text="One track, two days, and mentors beside you for genuine technical depth."
                   />
                 </div>
               </div>
@@ -73,22 +86,117 @@ export default function HomePage({ onNavigate }) {
         </div>
       </section>
 
+      <section className="section shell" id="registration">
+        <SectionHeader
+          eyebrow="Registration"
+          title="Event pricing"
+          text="Choose the rate that applies to you. All prices are listed in U.S. dollars."
+        />
+
+        <div className="pricing-grid">
+          {registrationPrices.map((item) => (
+            <article
+              key={item.audience}
+              className={`price-card accent-${item.accent}`}
+            >
+              <div className="price-audience">{item.audience}</div>
+              <div className="price-amount" aria-label={`${item.price} U.S. dollars`}>
+                <span>$</span>
+                <strong>{item.price}</strong>
+                <small>USD</small>
+              </div>
+              <div className="price-note">Per attendee</div>
+            </article>
+          ))}
+        </div>
+
+        <aside className="clasypcs-offer glass-card accent-orange">
+          <div className="clasypcs-copy">
+            <div className="panel-kicker">Exclusive CLASYPCS Participant Rate</div>
+            <h3>Attending CLASYPCS? Why not experience both events?</h3>
+            <p>
+              All CLASYPCS participants can add full LATAMTech Summit access for
+              an additional $60 USD.
+            </p>
+            <a
+              className="clasypcs-brand"
+              href="https://clasypcs2026.ieee-latamtech.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/partners/clasypcs-2026.png"
+                alt="CLASYPCS 2026 official website mark"
+              />
+              <span>
+                <strong>CLASYPCS 2026</strong>
+                <small>Visit the official event website</small>
+              </span>
+            </a>
+          </div>
+
+          <div className="clasypcs-rate" aria-label="60 U.S. dollar add-on rate">
+            <span>Add-on rate</span>
+            <strong><small>$</small>60</strong>
+            <em>USD</em>
+          </div>
+
+          <ul className="clasypcs-benefits">
+            {clasypcsBenefits.map((benefit) => (
+              <li key={benefit}>{benefit}</li>
+            ))}
+          </ul>
+        </aside>
+      </section>
+
       <section className="section section-alt">
         <div className="shell">
           <SectionHeader
-            eyebrow="Summit Snapshot"
-            title="Built for depth"
-            text="The home page acts as an executive overview before attendees branch into specialized pages."
+            eyebrow="How It Works"
+            title="A two-phase format"
+            text="Prepare online at your own pace, then join mentors and peers for two intensive days in San José."
           />
 
-          <div className="stats-grid">
-            {stats.map((item) => (
-              <article key={item.label} className={`stat-card accent-${item.accent}`}>
-                <strong>{item.value}</strong>
-                <span>{item.label}</span>
+          <div className="phase-grid">
+            {eventPhases.map((phase) => (
+              <article
+                key={phase.number}
+                className={`phase-card glass-card accent-${phase.accent}`}
+              >
+                <div className="phase-meta">
+                  <span>{phase.number}</span>
+                  <strong>{phase.mode}</strong>
+                </div>
+                <h3>{phase.title}</h3>
+                <p>{phase.description}</p>
+                <ul>
+                  {phase.items.map((item) => (
+                    <li key={item.title}>{item.title}</li>
+                  ))}
+                </ul>
+                <div className="phase-schedule">{phase.schedule}</div>
               </article>
             ))}
           </div>
+
+          <article className="credential-card glass-card accent-orange">
+            <div>
+              <div className="panel-kicker">Recognized and Endorsed</div>
+              <h3>A credential that counts</h3>
+              <p>
+                Every participant earns a verifiable digital certificate issued
+                through the official IEEE microcredentials program.
+              </p>
+            </div>
+            <a
+              className="button button-secondary"
+              href="https://credentials.ieee.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              IEEE Microcredentials
+            </a>
+          </article>
         </div>
       </section>
 
@@ -109,21 +217,21 @@ export default function HomePage({ onNavigate }) {
           />
           <RouteCard
             title="Agenda"
-            text="Two-day timeline with strategic programming and certification labs."
+            text="Virtual preparation followed by two intensive in-person Summit days."
             button="Open Agenda"
             onClick={() => onNavigate("/agenda")}
             accent="orange"
           />
           <RouteCard
             title="Sponsors"
-            text="Tiered partner visibility and ecosystem positioning."
+            text="Official sponsors, institutional partners, and program endorsers."
             button="Open Sponsors"
             onClick={() => onNavigate("/sponsors")}
             accent="cyan"
           />
           <RouteCard
             title="Venue"
-            text="Travel logistics, hotel information, and regional innovation context."
+            text="In-person dates, hotel information, and arrival preparation for San José."
             button="Open Venue"
             onClick={() => onNavigate("/venue")}
             accent="blue-soft"

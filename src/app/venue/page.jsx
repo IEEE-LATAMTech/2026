@@ -9,12 +9,12 @@ export default function VenuePage() {
           <div className="page-intro narrow">
             <div className="eyebrow-row">
               <span className="status-dot pulse orange" />
-              <span className="eyebrow">Primary Hub: San Jose</span>
+              <span className="eyebrow">San José, Costa Rica</span>
             </div>
             <h1>Venue & Travel</h1>
             <p>
-              Costa Rica anchors the summit with a high-tech corridor, premium
-              hospitality, and strong logistics for international delegates.
+              The in-person phase takes place September 22-23 in San José,
+              following the self-paced virtual preparation phase.
             </p>
           </div>
         </div>
@@ -23,12 +23,11 @@ export default function VenuePage() {
       <section className="section shell">
         <div className="venue-grid">
           <article className="glass-card venue-main accent-orange">
-            <div className="code-label">The Experience</div>
-            <h2>Four Points by Sheraton / Marriott Sabana</h2>
+            <div className="code-label">In-Person Summit</div>
+            <h2>Four Points by Sheraton San José Costa Rica</h2>
             <p>
-              A venue aligned with the system: controlled lighting, premium
-              meeting zones, hybrid-ready rooms, and strong access to the broader
-              innovation corridor.
+              The Summit brings participants together at the CLASYPCS venue for
+              mentorship, keynotes, hands-on building, and two days of focused work.
             </p>
             <div className="facts-grid">
               {venueFacts.map((fact) => (
@@ -42,19 +41,19 @@ export default function VenuePage() {
 
           <aside className="venue-side">
             <article className="glass-card accent-cyan side-panel">
-              <div className="block-label">Travel Protocol</div>
-              <h3>International attendee support</h3>
+              <div className="block-label">Before You Arrive</div>
+              <h3>Complete the virtual phase</h3>
               <p>
-                Visa guidance, transfer coordination, and accommodation
-                recommendations are presented as part of the attendee workflow.
+                Follow the documentation, theory, setup, and asynchronous support
+                path provided for your selected track.
               </p>
             </article>
             <article className="glass-card accent-blue side-panel">
-              <div className="block-label">Regional Context</div>
-              <h3>The Silicon Forest narrative</h3>
+              <div className="block-label">At the Venue</div>
+              <h3>Work beside mentors and peers</h3>
               <p>
-                The venue page reinforces Costa Rica as more than a location: it
-                becomes part of the innovation story.
+                Move from preparation into real technical work, expert guidance,
+                keynotes, and collaboration in San José.
               </p>
             </article>
           </aside>

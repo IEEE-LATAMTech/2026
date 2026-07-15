@@ -6,9 +6,9 @@ export default function AgendaPage() {
   return (
     <main className="page-main shell">
       <PageIntro
-        eyebrow="Schematic Overview"
-        title="Event Agenda"
-        text="A two-day structure that moves from strategy into advanced execution and certification."
+        eyebrow="How It Works"
+        title="Event Format & Agenda"
+        text="A self-paced virtual preparation phase followed by two intensive in-person days in San José."
       />
 
       <div className="agenda-grid">

@@ -7,11 +7,80 @@ export const navItems = [
   { label: "80th Anniversary", href: "/anniversary" },
 ];
 
-export const stats = [
-  { value: "80+", label: "Top-tier attendees", accent: "blue" },
-  { value: "4", label: "Advanced tracks", accent: "orange" },
-  { value: "15+", label: "Global keynotes", accent: "cyan" },
-  { value: "24h", label: "Hands-on lab time", accent: "blue-soft" },
+export const registrationPrices = [
+  { audience: "Student Members", price: "100", accent: "cyan" },
+  { audience: "Professionals", price: "120", accent: "orange" },
+  { audience: "Non-Members", price: "150", accent: "blue-soft" },
+];
+
+export const clasypcsBenefits = [
+  "Full event access",
+  "All materials",
+  "Breakfast and two lunches",
+  "Digital IEEE certificate",
+  "Track mentorship",
+  "One additional hotel night",
+  "Cocktails and dinner",
+  "Endorsed program",
+];
+
+export const eventPhases = [
+  {
+    number: "01",
+    mode: "Virtual",
+    schedule: "Self-paced · Leading up to September 22",
+    status: "Before the Summit",
+    title: "Prepare before you arrive.",
+    description:
+      "A guided virtual preparation phase so every participant arrives ready to work at the frontier.",
+    accent: "cyan",
+    items: [
+      {
+        title: "Documentation",
+        description: "Curated reading paths and references mapped to your chosen track.",
+      },
+      {
+        title: "Theory and foundations",
+        description: "The conceptual groundwork needed to understand the problem.",
+      },
+      {
+        title: "Setup and installation",
+        description: "Environment, toolchains, and installs walked through step by step.",
+      },
+      {
+        title: "Asynchronous support",
+        description: "Help channels and check-ins so blockers are resolved before arrival.",
+      },
+    ],
+  },
+  {
+    number: "02",
+    mode: "In-Person",
+    schedule: "September 22-23 · San José, Costa Rica",
+    status: "The Summit",
+    title: "Two days in the deep end.",
+    description:
+      "Mentors, keynotes, and hands-on work come together on site in San José.",
+    accent: "orange",
+    items: [
+      {
+        title: "Track mentorship",
+        description: "Experts work beside you in your specific technical area.",
+      },
+      {
+        title: "Keynotes",
+        description: "Leaders from across the field frame where the work is headed.",
+      },
+      {
+        title: "Build and have fun",
+        description: "Every track includes hands-on building and collaboration.",
+      },
+      {
+        title: "Go deeper",
+        description: "Move beyond preparation into the work that online courses cannot reach.",
+      },
+    ],
+  },
 ];
 
 export const trackCards = [
@@ -164,91 +233,25 @@ export const trackCards = [
   },
 ];
 
-export const agendaDays = [
-  {
-    title: "Day 1: Vision",
-    date: "September 22, 2026",
-    status: "Live tracks",
-    sessions: [
-      {
-        time: "09:00 - 10:30",
-        label: "Strategic keynote",
-        title: "Technological Sovereignty in LATAM",
-        description:
-          "A high-level opening session on AI autonomy, quantum-ready infrastructure, and the next regional computing roadmap.",
-        accent: "blue",
-      },
-      {
-        time: "11:00 - 13:00",
-        label: "Mentoring circles",
-        title: "Architecting Scale: CXO Sessions",
-        description:
-          "Closed-door groups focused on scaling hardware-software integrated startups across emerging markets.",
-        accent: "muted",
-      },
-      {
-        time: "14:30 - 17:00",
-        label: "Panel discussion",
-        title: "Green Energy for Compute Clusters",
-        description:
-          "How Latin America can leverage renewable grids to power the next generation of high-performance computing.",
-        accent: "muted",
-      },
-      {
-        time: "19:30 - late",
-        label: "Social engineering",
-        title: "Visionary Networking Dinner",
-        description:
-          "A premium closing dinner for speakers, researchers, and strategic partners.",
-        accent: "orange",
-      },
-    ],
-  },
-  {
-    title: "Day 2: Deep Dive",
-    date: "September 23, 2026",
-    status: "Certification labs",
-    sessions: [
-      {
-        time: "08:30 - 12:00",
-        label: "Immersive workshop",
-        title: "Quantum Cryptography Lab",
-        description:
-          "A technical workshop for post-quantum security layers on modern cloud and edge architectures.",
-        accent: "blue",
-      },
-      {
-        time: "13:30 - 16:30",
-        label: "Certification project",
-        title: "Edge Computing Certification",
-        description:
-          "Collaborative build track with deployable prototypes and IEEE competency validation.",
-        accent: "cyan",
-      },
-      {
-        time: "16:45 - 18:00",
-        label: "Closing summary",
-        title: "Summit Retrospective",
-        description:
-          "Synthesis of workshops, findings, and announcement of the 2027 research grant cycle.",
-        accent: "muted",
-      },
-      {
-        time: "18:30 - 21:00",
-        label: "Ceremony",
-        title: "Closing Cocktail & Awards",
-        description:
-          "Awards, certification acknowledgements, and closing partner commitments.",
-        accent: "orange",
-      },
-    ],
-  },
-];
+export const agendaDays = eventPhases.map((phase) => ({
+  title: `Phase ${phase.number}: ${phase.mode}`,
+  date: phase.schedule,
+  status: phase.status,
+  sessions: phase.items.map((item) => ({
+    time: phase.mode === "Virtual" ? "SELF-PACED" : "IN PERSON",
+    label: phase.mode,
+    title: item.title,
+    description: item.description,
+    accent: phase.accent,
+  })),
+}));
 
 export const sponsorTiers = [
   {
     tier: "Sponsor",
     accent: "blue",
+    label: "Official Sponsor",
+    description: "Supporting the Summit's technical program and participant experience.",
     companies: ["IEEE Computer Society"],
     logos: {
       "IEEE Computer Society": "/images/sponsors/ieee-computer-society.png",
@@ -257,6 +260,8 @@ export const sponsorTiers = [
   {
     tier: "Partners",
     accent: "cyan",
+    label: "Event Partners",
+    description: "Institutional and community partners supporting LATAMTech Summit 2026.",
     companies: [
       "Dojo",
       "Unidad de Posgrados de Computación del TEC Costa Rica",
@@ -266,19 +271,29 @@ export const sponsorTiers = [
         "/images/sponsors/unidad-posgrados-computacion.png",
     },
   },
+  {
+    tier: "Endorsed By",
+    accent: "orange",
+    label: "Program Endorsement",
+    description: "Organizations recognizing and endorsing the Summit program.",
+    companies: [
+      "Open Quantum Institute",
+      "Colaboratorio Nacional de Computación Avanzada (CENAT)",
+    ],
+  },
 ];
 
 export const venueFacts = [
   {
-    title: "Primary venue",
-    text: "Four Points by Sheraton / Marriott Sabana, in the center of San Jose's tech corridor.",
+    title: "In-person dates",
+    text: "September 22-23, 2026.",
   },
   {
-    title: "Airport connection",
-    text: "Juan Santamaria International Airport with direct shuttle access for delegates and speakers.",
+    title: "Location",
+    text: "San José, Costa Rica.",
   },
   {
-    title: "Technical amenities",
-    text: "Wi-Fi 6E, hybrid streaming rooms, live demo zones, and collaboration lounges.",
+    title: "CLASYPCS add-on",
+    text: "Includes one additional hotel night for eligible CLASYPCS participants.",
   },
 ];

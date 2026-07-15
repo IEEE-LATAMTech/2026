@@ -107,7 +107,9 @@
 .signal-card span,
 .feature-card p,
 .route-card p,
-.stat-card span {
+.clasypcs-offer p,
+.phase-card p,
+.credential-card p {
   color: var(--text-muted);
   line-height: 1.65;
 }
@@ -123,34 +125,280 @@
   gap: 24px;
 }
 
-.stats-grid {
+.pricing-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
 }
 
-.stat-card {
+#registration {
+  scroll-margin-top: 96px;
+}
+
+.price-card {
+  position: relative;
+  display: flex;
+  min-height: 220px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
   padding: 28px;
-  border-radius: var(--radius-lg);
   border: 1px solid var(--surface-line);
-  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.025);
 }
 
-.stat-card strong {
-  display: block;
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  margin-bottom: 8px;
+.price-card::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  content: "";
 }
 
-.stat-card span {
+.price-card.accent-cyan::before,
+.price-card.accent-blue-soft::before {
+  background: var(--cyan);
+}
+
+.price-card.accent-orange::before {
+  background: var(--orange);
+}
+
+.price-audience,
+.price-note {
+  color: var(--text-dim);
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-size: 0.75rem;
+}
+
+.price-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: var(--text-main);
+}
+
+.price-amount span {
+  font-size: 1.25rem;
+}
+
+.price-amount strong {
+  font-size: clamp(3rem, 6vw, 4.75rem);
+  line-height: 1;
+}
+
+.price-amount small {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.clasypcs-offer {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) 210px minmax(0, 1fr);
+  align-items: center;
+  gap: 32px;
+  margin-top: 28px;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+}
+
+.clasypcs-copy h3,
+.credential-card h3 {
+  margin: 10px 0 14px;
+  font-size: clamp(1.45rem, 2.4vw, 2.2rem);
+  line-height: 1.12;
+}
+
+.clasypcs-brand {
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  max-width: 420px;
+  margin-top: 22px;
+  padding: 10px 12px;
+  border: 1px solid rgba(243, 112, 33, 0.45);
+  border-radius: var(--radius-md);
+  background: rgba(243, 112, 33, 0.06);
+}
+
+.clasypcs-brand img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.clasypcs-brand strong,
+.clasypcs-brand small {
+  display: block;
+}
+
+.clasypcs-brand small {
+  margin-top: 3px;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+}
+
+.clasypcs-rate {
+  padding: 24px;
+  border-right: 1px solid var(--surface-line);
+  border-left: 1px solid var(--surface-line);
+  text-align: center;
+}
+
+.clasypcs-rate > span,
+.clasypcs-rate em,
+.phase-schedule {
   color: var(--text-dim);
+  font-size: 0.72rem;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.clasypcs-rate strong {
+  display: block;
+  margin: 12px 0 4px;
+  color: var(--text-main);
+  font-size: clamp(4rem, 7vw, 6.5rem);
+  line-height: 0.9;
+}
+
+.clasypcs-rate strong small {
+  margin-right: 4px;
+  color: var(--orange);
+  font-size: 1.35rem;
+  vertical-align: top;
+}
+
+.clasypcs-benefits {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.clasypcs-benefits li {
+  position: relative;
+  padding-left: 22px;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.clasypcs-benefits li::before {
+  position: absolute;
+  top: 0.05em;
+  left: 2px;
+  width: 6px;
+  height: 10px;
+  border-right: 2px solid var(--orange);
+  border-bottom: 2px solid var(--orange);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.phase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.phase-card {
+  display: flex;
+  min-height: 430px;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: var(--radius-lg);
+}
+
+.phase-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.phase-meta span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--cyan);
+  color: var(--surface);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.phase-card.accent-orange .phase-meta span {
+  background: var(--orange);
+}
+
+.phase-meta strong,
+.phase-schedule {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.phase-card h3 {
+  margin: 0 0 14px;
+  font-size: clamp(1.5rem, 2.4vw, 2.25rem);
+  line-height: 1.12;
+}
+
+.phase-card ul {
+  display: grid;
+  gap: 12px;
+  padding-left: 20px;
+  margin: 22px 0;
+  color: var(--text-main);
+}
+
+.phase-card li::marker {
+  color: var(--cyan);
+}
+
+.phase-card.accent-orange li::marker {
+  color: var(--orange);
+}
+
+.phase-schedule {
+  padding-top: 18px;
+  margin-top: auto;
+  border-top: 1px solid var(--surface-line);
+}
+
+.credential-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 24px;
+  padding: 30px;
+  border-radius: var(--radius-lg);
+}
+
+.credential-card p {
+  max-width: 720px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1080px) {
-  .stats-grid {
-    grid-template-columns: 1fr;
+  .clasypcs-offer {
+    grid-template-columns: minmax(0, 1fr) 190px;
+  }
+
+  .clasypcs-benefits {
+    grid-column: 1 / -1;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -180,9 +428,43 @@
     margin-top: 72px;
     padding: 28px;
   }
+
+  .clasypcs-offer,
+  .phase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clasypcs-rate {
+    border-right: 0;
+    border-left: 0;
+    border-top: 1px solid var(--surface-line);
+    border-bottom: 1px solid var(--surface-line);
+    text-align: left;
+  }
+
+  .clasypcs-benefits {
+    grid-column: auto;
+  }
+
+  .credential-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 680px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price-card {
+    min-height: 190px;
+  }
+
+  .clasypcs-benefits {
+    grid-template-columns: 1fr;
+  }
+
   .hero-lockup {
     width: min(100%, 520px);
   }
@@ -200,5 +482,11 @@
   .hero-panel {
     margin-top: 52px;
     padding: 24px;
+  }
+
+  .clasypcs-offer,
+  .phase-card,
+  .credential-card {
+    padding: 22px;
   }
 }

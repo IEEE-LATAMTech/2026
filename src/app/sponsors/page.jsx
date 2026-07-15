@@ -6,9 +6,9 @@ export default function SponsorsPage() {
   return (
     <main className="page-main shell">
       <PageIntro
-        eyebrow="Ecosystem Partners"
+        eyebrow="Recognized & Endorsed"
         title="Sponsors & Strategic Allies"
-        text="Positioning the summit as a bridge between regional talent, deep-tech research, and global infrastructure players."
+        text="Organizations supporting and endorsing LATAMTech Summit 2026."
       />
 
       <div className="stack-xl">
