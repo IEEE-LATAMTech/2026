@@ -25,8 +25,8 @@ export default function AnniversaryPage() {
                 Celebrating <span>80 Years</span> of Computing Excellence
               </h1>
               <p>
-                LATAMTech Summit 2026 is a special regional edition honoring 80
-                years of building the global computing community.
+                IEEE CS LATAMTech Summit Costa Rica 2026 is a special regional
+                edition honoring 80 years of building the global computing community.
               </p>
             </div>
           </div>
@@ -50,12 +50,12 @@ export default function AnniversaryPage() {
           <article className="glass-card anniversary-card accent-orange">
             <span className="material-symbols-outlined anniversary-icon">route</span>
             <div className="block-label">Regional Connection</div>
-            <h2>Connecting the milestone with LATAMTech</h2>
+            <h2>Connecting the milestone with IEEE CS LATAMTech Summit Costa Rica 2026</h2>
             <p>
-              LATAMTech Summit 2026 forms part of this global celebration from
-              Region 9, bringing to Latin America an experience focused on
-              emerging technologies, technical certification, mentoring,
-              industry engagement, and community building.
+              IEEE CS LATAMTech Summit Costa Rica 2026 forms part of this global
+              celebration from Region 9, bringing to Latin America an experience
+              focused on emerging technologies, technical certification,
+              mentoring, industry engagement, and community building.
             </p>
           </article>
         </section>

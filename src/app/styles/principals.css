@@ -143,6 +143,9 @@ a {
 }
 
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 46px;
   border-radius: var(--radius-md);
   padding: 0 20px;

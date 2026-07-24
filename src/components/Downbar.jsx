@@ -1,25 +1,39 @@
-export default function Downbar() {
+export default function Downbar({ onNavigate }) {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <div className="shell footer-grid">
         <div>
-          <div className="footer-brand">LATAMTech Summit</div>
+          <div className="footer-brand">
+            IEEE CS LATAMTech Summit Costa Rica 2026
+          </div>
           <p>
-            Precision engineering for a connected region. IEEE-sponsored summit
-            experience with a premium high-tech visual system.
+            An IEEE Computer Society event connecting technical depth,
+            mentorship, and regional collaboration.
           </p>
         </div>
         <div>
           <div className="footer-title">Resources</div>
-          <a href="/tracks">Tracks</a>
-          <a href="/agenda">Agenda</a>
-          <a href="/venue">Venue</a>
+          <button className="footer-link" onClick={() => onNavigate("/tracks")}>
+            Tracks
+          </button>
+          <button className="footer-link" onClick={() => onNavigate("/agenda")}>
+            Agenda
+          </button>
+          <button className="footer-link" onClick={() => onNavigate("/venue")}>
+            Venue
+          </button>
         </div>
         <div>
           <div className="footer-title">Participation</div>
-          <a href="/sponsors">Sponsors</a>
-          <a href="/anniversary">80th Anniversary</a>
-          <a href="/">Home</a>
+          <button className="footer-link" onClick={() => onNavigate("/sponsors")}>
+            Sponsors
+          </button>
+          <button className="footer-link" onClick={() => onNavigate("/anniversary")}>
+            80th Anniversary
+          </button>
+          <button className="footer-link" onClick={() => onNavigate("/")}>
+            Home
+          </button>
         </div>
         <div>
           <div className="footer-title">Status</div>

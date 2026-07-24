@@ -13,13 +13,11 @@ export const registrationPrices = [
   { audience: "Non-Members", price: "150", accent: "blue-soft" },
 ];
 
-export const clasypcsBenefits = [
-  "Full event access",
-  "All materials",
+export const eventBenefits = [
+  "Full access to both Summit days",
+  "All materials and technical resources",
   "Breakfast and two lunches",
-  "Digital IEEE certificate",
   "Track mentorship",
-  "One additional hotel night",
   "Cocktails and dinner",
   "Endorsed program",
 ];
@@ -261,7 +259,8 @@ export const sponsorTiers = [
     tier: "Partners",
     accent: "cyan",
     label: "Event Partners",
-    description: "Institutional and community partners supporting LATAMTech Summit 2026.",
+    description:
+      "Institutional and community partners supporting IEEE CS LATAMTech Summit Costa Rica 2026.",
     companies: [
       "Dojo",
       "Unidad de Posgrados de Computación del TEC Costa Rica",
@@ -278,7 +277,7 @@ export const sponsorTiers = [
     description: "Organizations recognizing and endorsing the Summit program.",
     companies: [
       "Open Quantum Institute",
-      "Colaboratorio Nacional de Computación Avanzada (CENAT)",
+      "Colaboratorio Nacional de Computación Avanzada (CCNA), CeNAT",
     ],
   },
 ];

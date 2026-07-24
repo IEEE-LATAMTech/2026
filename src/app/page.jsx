@@ -1,6 +1,6 @@
 import {
-  clasypcsBenefits,
   eventPhases,
+  eventBenefits,
   registrationPrices,
 } from "@/app/datos";
 import MetaPill from "@/components/MetaPill";
@@ -23,11 +23,14 @@ export default function HomePage({ onNavigate }) {
           <div className="hero-layout">
             <div className="hero-copy">
               <div className="hero-heading">
-                <div className="hero-lockup" aria-label="LATAMTech and IEEE Computer Society">
+                <div
+                  className="hero-lockup"
+                  aria-label="IEEE CS LATAMTech Summit Costa Rica 2026 and IEEE Computer Society"
+                >
                   <img
                     className="hero-lockup-logo"
                     src="/images/latamtech-hero.png"
-                    alt="IEEE CS LATAMTech Costa Rica 2026 and IEEE Computer Society 80th anniversary"
+                    alt="IEEE CS LATAMTech Summit Costa Rica 2026 and IEEE Computer Society 80th anniversary"
                   />
                 </div>
               </div>
@@ -110,13 +113,49 @@ export default function HomePage({ onNavigate }) {
           ))}
         </div>
 
+        <section className="registration-includes glass-card accent-cyan">
+          <div className="credential-highlight">
+            <div className="panel-kicker">Included with Every Registration</div>
+            <div className="credential-heading">
+              <div className="credential-hours" aria-label="24 hours">
+                <strong>24</strong>
+                <span>Hours</span>
+              </div>
+              <div>
+                <h3>24-Hour Certification with IEEE Credentials</h3>
+                <p>
+                  Complete the program and earn a verifiable digital certificate
+                  issued through IEEE Credentials.
+                </p>
+              </div>
+            </div>
+            <a
+              className="button button-secondary"
+              href="https://credentials.ieee.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Explore IEEE Credentials
+            </a>
+          </div>
+
+          <div className="included-details">
+            <div className="price-audience">Your Registration Also Includes</div>
+            <ul className="event-benefits">
+              {eventBenefits.map((benefit) => (
+                <li key={benefit}>{benefit}</li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
         <aside className="clasypcs-offer glass-card accent-orange">
           <div className="clasypcs-copy">
             <div className="panel-kicker">Exclusive CLASYPCS Participant Rate</div>
             <h3>Attending CLASYPCS? Why not experience both events?</h3>
             <p>
-              All CLASYPCS participants can add full LATAMTech Summit access for
-              an additional $60 USD.
+              All CLASYPCS participants can add full IEEE CS LATAMTech Summit
+              Costa Rica 2026 access for an additional $60 USD.
             </p>
             <a
               className="clasypcs-brand"
@@ -133,6 +172,9 @@ export default function HomePage({ onNavigate }) {
                 <small>Visit the official event website</small>
               </span>
             </a>
+            <div className="clasypcs-note">
+              Includes one additional hotel night at the venue.
+            </div>
           </div>
 
           <div className="clasypcs-rate" aria-label="60 U.S. dollar add-on rate">
@@ -140,12 +182,6 @@ export default function HomePage({ onNavigate }) {
             <strong><small>$</small>60</strong>
             <em>USD</em>
           </div>
-
-          <ul className="clasypcs-benefits">
-            {clasypcsBenefits.map((benefit) => (
-              <li key={benefit}>{benefit}</li>
-            ))}
-          </ul>
         </aside>
       </section>
 
@@ -179,24 +215,6 @@ export default function HomePage({ onNavigate }) {
             ))}
           </div>
 
-          <article className="credential-card glass-card accent-orange">
-            <div>
-              <div className="panel-kicker">Recognized and Endorsed</div>
-              <h3>A credential that counts</h3>
-              <p>
-                Every participant earns a verifiable digital certificate issued
-                through the official IEEE microcredentials program.
-              </p>
-            </div>
-            <a
-              className="button button-secondary"
-              href="https://credentials.ieee.org/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              IEEE Microcredentials
-            </a>
-          </article>
         </div>
       </section>
 

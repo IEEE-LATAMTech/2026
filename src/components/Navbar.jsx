@@ -13,7 +13,7 @@ export default function Navbar({ currentPath, onNavigate }) {
     <header className="topbar">
       <div className="topbar-inner shell">
         <button className="brand" onClick={() => handleNav("/")}>
-          LATAMTech Summit 2026
+          IEEE CS LATAMTech Summit Costa Rica 2026
         </button>
 
         <nav className="desktop-nav" aria-label="Primary">
@@ -29,7 +29,14 @@ export default function Navbar({ currentPath, onNavigate }) {
         </nav>
 
         <div className="topbar-actions">
-          <button className="button button-primary">Register Interest</button>
+          <a
+            className="button button-primary"
+            href="https://events.vtools.ieee.org/m/564849"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Register Now
+          </a>
           <button
             className="menu-toggle"
             aria-label="Open menu"

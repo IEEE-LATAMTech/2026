@@ -1,6 +1,6 @@
 # 2026
 
-Proyecto React para `LATAMTech Summit 2026`.
+Proyecto React para `IEEE CS LATAMTech Summit Costa Rica 2026`.
 
 ## Scripts
 
