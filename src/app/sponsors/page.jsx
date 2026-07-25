@@ -26,12 +26,12 @@ export default function SponsorsPage({ onNavigate }) {
             </p>
           </div>
           <div className="cta-actions">
-            <button
+            <a
               className="button button-primary"
-              onClick={() => onNavigate("/#contact")}
+              href="mailto:amercado.rios1905@gmail.com?subject=IEEE%20CS%20LATAMTech%20Summit%20Costa%20Rica%202026"
             >
               Contact the Organizers
-            </button>
+            </a>
           </div>
         </section>
       </div>
