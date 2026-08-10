@@ -215,8 +215,30 @@ export const trackCards = [
     ],
   },
   {
+    slug: "quantum-computing",
+    code: "04 // QUANTUM_COMPUTING",
+    title: "Quantum Computing",
+    accent: "orange",
+    description:
+      "A technical track exploring quantum computing and its connections with advanced computing research.",
+    tags: ["Quantum Computing", "High-Performance Computing", "Neural Networks"],
+    partner: "Costa Rica Institute of Technology (ITCR)",
+    speaker: {
+      name: "José Castro",
+      role: "Professor of Computer Engineering, Costa Rica Institute of Technology (ITCR)",
+      initials: "JC",
+      bio: "José Castro is a professor of Computer Engineering at ITCR and taught the first quantum computing course in Costa Rica in ITCR's Master's in Computing program in 2006. He was the coordinator of the Computing Research Center (CIC) from 2006 to 2011, where he promoted projects in the use of high-performance computing and fostered the creation of ITCR's eScience research program. He is currently a professor at ITCR's San José campus. His interests are Quantum Computing and Learning in Neural Networks. José Castro holds a Ph.D. in Computer Engineering from the University of Central Florida.",
+    },
+    sections: [
+      {
+        label: "Track Details",
+        items: ["Program details will be announced soon."],
+      },
+    ],
+  },
+  {
     slug: "decentralized-web",
-    code: "04 // WEB_DECENTRALIZED",
+    code: "05 // WEB_DECENTRALIZED",
     title: "Decentralized Web & Web3",
     accent: "blue-soft",
     description:

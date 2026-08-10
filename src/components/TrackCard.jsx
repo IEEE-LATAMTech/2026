@@ -21,7 +21,17 @@ export default function TrackCard({ track }) {
             {speakers.map((speaker) => (
               <div key={speaker.name} className="track-speaker">
                 <div className="track-speaker-profile">
-                  <img src={speaker.image} alt={speaker.name} />
+                  {speaker.image ? (
+                    <img src={speaker.image} alt={speaker.name} />
+                  ) : (
+                    <div
+                      className="track-speaker-placeholder"
+                      role="img"
+                      aria-label={`${speaker.name} photo unavailable`}
+                    >
+                      {speaker.initials}
+                    </div>
+                  )}
                   <div>
                     <strong>{speaker.name}</strong>
                     <span>{speaker.role}</span>
