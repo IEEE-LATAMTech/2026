@@ -237,8 +237,41 @@ export const trackCards = [
     ],
   },
   {
+    slug: "modern-parallel-python-hpc-ai",
+    code: "05 // HPC_PYTHON",
+    title: "Modern Parallel Programming in Python for HPC and Artificial Intelligence",
+    accent: "cyan",
+    description:
+      "Python is the predominant language in data science, artificial intelligence, and scientific computing. In this workshop, participants will learn how to overcome performance limitations using modern high-performance computing techniques, from parallelism on a single machine to distributed execution on HPC clusters and GPU acceleration.",
+    tags: ["Python", "HPC", "GPU / Distributed Computing"],
+    partner: "CeNAT / Colaboratorio Nacional de Computación Avanzada (CCNA)",
+    speaker: {
+      name: "Christian Asch",
+      role: "Collaborator, CeNAT and Colaboratorio Nacional de Computación Avanzada (CCNA)",
+      image: "/images/speakers/christian-asch.jpeg",
+      bio: "Christian Asch is a collaborator at the National Center for High Technology (CeNAT) and the Colaboratorio Nacional de Computación Avanzada (CCNA), where he participates in projects related to high-performance computing (HPC), parallel programming, distributed computing, and GPU acceleration.\n\nHe holds a Bachelor's degree in Computing and Informatics with an emphasis in Computer Science from the University of Costa Rica (UCR). He has contributed to research in areas such as computational physics, supercomputing, performance analysis, parallel algorithms, cybersecurity, and HPC infrastructure for academic research. His primary interest is bringing modern high-performance computing techniques to scientific, academic, and data science communities through accessible tools in the Python ecosystem.",
+    },
+    sections: [
+      {
+        label: "Topics",
+        items: [
+          "Fundamentals of High-Performance Computing (HPC).",
+          "Strategies for accelerating scientific and data-analysis applications in Python.",
+          "Parallelism on multicore architectures.",
+          "Efficient processing of large volumes of data.",
+          "GPU-accelerated computing.",
+          "Applications of HPC in artificial intelligence and machine learning.",
+          "Distributed computing and scaling across multiple nodes.",
+          "Modern tools from the Python ecosystem for HPC.",
+          "Best practices for performance, measurement, and optimization.",
+          "Using HPC infrastructure for research and innovation.",
+        ],
+      },
+    ],
+  },
+  {
     slug: "decentralized-web",
-    code: "05 // WEB_DECENTRALIZED",
+    code: "06 // WEB_DECENTRALIZED",
     title: "Decentralized Web & Web3",
     accent: "blue-soft",
     description:

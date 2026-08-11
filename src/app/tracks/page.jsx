@@ -8,7 +8,7 @@ export default function TracksPage() {
       <PageIntro
         eyebrow="Knowledge Ecosystem"
         title="Technical Tracks"
-        text="Five rigorous domains built as deployable learning systems, not abstract marketing categories."
+        text="Six rigorous domains built as deployable learning systems, not abstract marketing categories."
       />
 
       <div className="stack-xl">
