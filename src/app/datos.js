@@ -110,6 +110,36 @@ export const trackCards = [
         ],
       },
       {
+        label: "Block 0: Context Preparation",
+        items: [
+          "A laptop with a Linux-based operating system (preferably Debian or a derivative). A virtual machine running on top of another operating system is also acceptable.",
+          "At least 8 GB of RAM; 16 GB is recommended.",
+          "Approximately 10 GB of free disk space.",
+          "An internet connection for the initial image download.",
+          "The ability to run virtualization.",
+          "Docker Engine and Docker Compose.",
+        ],
+      },
+      {
+        label: "Block 1: The Scientific Challenge",
+        items: [
+          "The experiment demonstrates how an attacker with network access to a smart-building BACnet/IP controller can manipulate building operations through unauthorized BACnet commands.",
+          "Discover the simulated BACnet controller and its exposed objects.",
+          "Read information such as HVAC temperatures, setpoints, and device states.",
+          "Issue unauthorized WriteProperty commands to modify controllable points.",
+          "Observe the cyber-physical consequence in the simulated building—for example, changing an HVAC setpoint or switching equipment on or off.",
+          "Analyze the security implications and consider how such activity could be detected or prevented.",
+          {
+            text: 'Related publication: "Automatic Deployment of Specification-based Intrusion Detection in the BACnet Protocol"',
+            href: "https://dl.acm.org/doi/abs/10.1145/3140241.3140244",
+          },
+          {
+            text: "Additional reading: What Is BACnet? The Building Automation Protocol Explained",
+            href: "https://controlcircuitry.com/what-is-bacnet-and-how-it-works/",
+          },
+        ],
+      },
+      {
         label: "Entry Profile",
         items: [
           "General knowledge of computing, cybersecurity, or control systems.",
@@ -245,12 +275,20 @@ export const trackCards = [
       "Python is the predominant language in data science, artificial intelligence, and scientific computing. In this workshop, participants will learn how to overcome performance limitations using modern high-performance computing techniques, from parallelism on a single machine to distributed execution on HPC clusters and GPU acceleration.",
     tags: ["Python", "HPC", "GPU / Distributed Computing"],
     partner: "CeNAT / Colaboratorio Nacional de Computación Avanzada (CCNA)",
-    speaker: {
-      name: "Christian Asch",
-      role: "Collaborator, CeNAT and Colaboratorio Nacional de Computación Avanzada (CCNA)",
-      image: "/images/speakers/christian-asch.jpeg",
-      bio: "Christian Asch is a collaborator at the National Center for High Technology (CeNAT) and the Colaboratorio Nacional de Computación Avanzada (CCNA), where he participates in projects related to high-performance computing (HPC), parallel programming, distributed computing, and GPU acceleration.\n\nHe holds a Bachelor's degree in Computing and Informatics with an emphasis in Computer Science from the University of Costa Rica (UCR). He has contributed to research in areas such as computational physics, supercomputing, performance analysis, parallel algorithms, cybersecurity, and HPC infrastructure for academic research. His primary interest is bringing modern high-performance computing techniques to scientific, academic, and data science communities through accessible tools in the Python ecosystem.",
-    },
+    speakers: [
+      {
+        name: "Christian Asch",
+        role: "Collaborator, CeNAT and Colaboratorio Nacional de Computación Avanzada (CCNA)",
+        image: "/images/speakers/christian-asch.jpeg",
+        bio: "Christian Asch is a collaborator at the National Center for High Technology (CeNAT) and the Advanced Computing Collaboratory (CCNA), where he participates in projects related to high-performance computing (HPC), parallel programming, distributed computing, and GPU acceleration.\n\nHe holds a Bachelor's degree in Computing and Informatics with an emphasis in Computer Science from the University of Costa Rica (UCR). He has contributed to research in areas such as computational physics, supercomputing, performance analysis, parallel algorithms, cybersecurity, and HPC infrastructure for academic research. His primary interest is bringing modern high-performance computing techniques to scientific, academic, and data science communities through accessible tools in the Python ecosystem.",
+      },
+      {
+        name: "Luis Carlos N. Todd",
+        role: "Research Assistant at ITCR and CeNAT, M.Sc. Student at ITCR",
+        initials: "LT",
+        bio: "Luis Carlos N. Todd is a research assistant at the Costa Rica Institute of Technology and at the National Center for High Technology, where he works in projects about high-performance computing (HPC), deep learning (DL), natural language processing (NLP) and bioinformatics.\n\nHe holds a Bachelor's degree in Computer Engineering and currently is a M.Sc. Student in Computer Science at ITCR. His research interests include fault tolerance for DL and HPC systems, retrieval-augmented generation (RAG) and agents in HPC infrastructures, resource optimization techniques for DL and data science. He has experience working with quantization-aware training, mixed precision optimizations and Bayesian models in the python ecosystem using technologies like Pytorch, Jax and NumPyro. He has also leveraged high-performance tools like the HDF5 library to study silent data corruptions (SDCs) in DL and HPC dwarfs with parallel and distributed workloads.",
+      },
+    ],
     sections: [
       {
         label: "Topics",

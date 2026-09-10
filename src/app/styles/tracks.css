@@ -143,6 +143,17 @@
   margin: 0;
 }
 
+.detail-link {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 212, 255, 0.45);
+  text-underline-offset: 3px;
+}
+
+.detail-link:hover {
+  color: var(--cyan);
+}
+
 @media (max-width: 1080px) {
   .track-card {
     grid-template-columns: 1fr;

@@ -1,5 +1,19 @@
 export default function TrackCard({ track }) {
   const speakers = track.speakers ?? (track.speaker ? [track.speaker] : []);
+  const renderSectionItem = (item) => {
+    if (typeof item === "string") return item;
+
+    return (
+      <a
+        className="detail-link"
+        href={item.href}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {item.text}
+      </a>
+    );
+  };
 
   return (
     <article className={`glass-card track-card accent-${track.accent}`}>
@@ -51,9 +65,9 @@ export default function TrackCard({ track }) {
               <div className="block-label">{section.label}</div>
               <ul className="objective-list">
                 {section.items.map((item, index) => (
-                  <li key={item}>
+                  <li key={typeof item === "string" ? item : item.text}>
                     <span>/{String(index + 1).padStart(2, "0")}</span>
-                    <p>{item}</p>
+                    <p>{renderSectionItem(item)}</p>
                   </li>
                 ))}
               </ul>
