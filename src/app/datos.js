@@ -1,6 +1,7 @@
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "Tracks", href: "/tracks" },
+  { label: "Team", href: "/team" },
   { label: "Agenda", href: "/agenda" },
   { label: "Sponsors", href: "/sponsors" },
   { label: "Venue", href: "/venue" },
@@ -21,6 +22,53 @@ export const eventBenefits = [
   "Cocktails and dinner",
   "Endorsed program",
 ];
+
+export const organizingTeam = {
+  organizers: [
+    {
+      code: "01",
+      name: "Esteban Arias-Méndez",
+      role: "Organizing Committee",
+      accent: "cyan",
+      image: "/images/team/esteban-arias-mendez.png",
+    },
+    {
+      code: "02",
+      name: "Alfredo Mercado Rios",
+      role: "Organizing Committee",
+      accent: "cyan",
+      image: "/images/team/alfredo-mercado-rios.png",
+    },
+    {
+      code: "03",
+      name: "Nicole Parra Valverde",
+      role: "Organizing Committee",
+      accent: "cyan",
+      image: "/images/team/nicole-parra-valverde.png",
+    },
+    {
+      code: "04",
+      name: "Mauricio Arroyo",
+      role: "Organizing Committee",
+      accent: "cyan",
+    },
+  ],
+  collaborators: [
+    {
+      code: "05",
+      name: "Jaime Garcia",
+      role: "Event Collaborator",
+      accent: "orange",
+    },
+    {
+      code: "06",
+      name: "Roberto Moreno",
+      role: "Event Collaborator",
+      accent: "orange",
+      image: "/images/team/roberto-moreno.png",
+    },
+  ],
+};
 
 export const eventPhases = [
   {
@@ -211,10 +259,16 @@ export const trackCards = [
         bio: "• Ph.D. in Computer Science and Intelligent Systems, De Montfort University, United Kingdom, funded by De Montfort University. • Master of Science in Electrical Engineering with an emphasis on digital systems, University of Costa Rica (UCR). • Bachelor's degree in Computing and Informatics, University of Costa Rica. • Data Science Department Coordinator, Spartan Approach. • Specialties: Digital signal processing (sound, images, video), pattern recognition, machine learning, and parallel computing. • Coordinator of the Pattern Recognition and Machine Learning Group (PARMA-Group) at TEC. • Publications: Approximately 40 articles in highly renowned international conferences such as ICIP and NIPS and in first- and second-quartile journals, in the areas of digital signal processing, pattern recognition, and deep learning. • He has taught courses on machine learning, neural networks, deep learning, programming, and electronics. This has included programs in the Master's in Computer Science (TEC), Bachelor's in Computer Engineering (TEC), Data Science program (TEC), Computer Engineering (TEC), Electrical Engineering (UCR), and he has been a guest professor at De Montfort University (United Kingdom) and the University of Buenos Aires (Argentina). • Professional experience: Intel: research and development in image analysis; Search Technologies: Big Data consultant; Spartan Approach: artificial intelligence and data science; researcher at the Center for Research in Information and Communication Technologies (UCR, CITIC); Image Processing and Computer Vision group (UBA, Argentina), among others.",
       },
       {
-        name: "Esteban Villalobos Gómez",
-        role: "AI & LLM Architecture Technical Manager, Accenture",
-        image: "/images/speakers/esteban-villalobos.png",
-        bio: "Esteban Villalobos Gómez is a software engineer and consultant with more than 20 years of experience, specializing in Machine Learning engineering, large-scale data processing, and high-performance architectures. He currently serves as AI & LLM Architecture Technical Manager at Accenture, where he leads the design and implementation of agentic systems for clients that are global corporations, enabling the automation of complex data analysis and the optimization of critical processes. His experience stands out in orchestrating advanced Generative AI (RAG) solutions using cutting-edge technologies such as LangGraph, Databricks, Azure OpenAI, and robust cloud architectures on AWS and Azure.\n\nIn academia, Esteban has a strong educational background that includes a Master's degree in Computer Science (Magna Cum Laude) from the Costa Rica Institute of Technology (ITCR), where he developed a research thesis on uncertainty estimation in generative models for the LHCb project at CERN. He complements this profile with postgraduate degrees in Data Science and Big Data, in addition to his undergraduate degree in Computer Engineering from ITCR.\n\nThroughout his career, he has led multidisciplinary teams in delivering high-impact technology products, from data-pipeline monitoring systems (ETL) to scalable microservices in Python, Java, and C#. His professional approach combines deep technical expertise in structured and unstructured data with a strategic vision to guide organizations toward the next generation of AI initiatives. He currently focuses on the evolution of language-model architectures (LLMs) and the creation of intelligent digital agents that transform business competitiveness on a global scale.",
+        name: "Sarah Priscilla Quesada Chaves",
+        role: "Software Engineering Student, Tecnológico de Costa Rica (TEC)",
+        image: "/images/speakers/sarah-priscilla-quesada-chaves.png",
+        bio: "Sarah Priscilla Quesada Chaves is a Software Engineering student at Tecnológico de Costa Rica (TEC) with interests in artificial intelligence, data analysis, machine learning, and the development of technology-driven solutions to real-world problems. Her academic background includes projects in software development, software testing, data analysis, and research.\n\nShe is currently working with CEN-CINAI on a project focused on the digital transformation of interdisciplinary care processes, exploring the use of AI-assisted development and software solutions to improve institutional workflows and support the design of practical digital tools.\n\nShe is also co-author of a published research study on carpooling and traffic-flow optimization, combining bibliometric analysis with integer linear programming to explore more efficient and sustainable urban mobility solutions.\n\nHer current interests center on applied artificial intelligence, Python, machine learning, data analysis, and the development of technology with practical and social impact.",
+      },
+      {
+        name: "Óscar Andrés Obando Umaña",
+        role: "Computer Science Student, Tecnológico de Costa Rica (TEC)",
+        image: "/images/speakers/oscar-andres-obando-umana.png",
+        bio: "Óscar Obando is a Computer Science student at Tecnológico de Costa Rica (TEC), with focus on software engineering. He has interest on software development, automation, artificial intelligence, and the design of solutions for real-world problems. His academic and professional experience includes software development, system design, software testing, and the application of AI to software engineering processes.\n\nHe has contributed to projects involving the design, development, and evaluation of software solutions. As part of his work, he helped design and execute performance benchmarks for language models, developing experimental methodologies and analyzing results to draw meaningful comparisons.\n\nHe is currently developing a software module for the Centro Nacional de Detección Temprana de Cáncer Gástrico (CNDTCG), a Costa Rican organization responsible for cancer screening campaigns. The project focuses on digitally managing the workflow and information associated with gastroduodenal series studies, supporting the modernization of clinical processes.\n\nHe also has experience with AI-assisted software development, exploring role-based architectures and a custom orchestrator to structure and coordinate AI agents in support of software development and documentation processes.",
       },
       {
         name: "Danny Xie Li",

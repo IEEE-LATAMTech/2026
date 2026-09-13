@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Downbar from "@/components/Downbar";
 import HomePage from "@/app/page";
 import TracksPage from "@/app/tracks/page";
+import TeamPage from "@/app/team/page";
 import AgendaPage from "@/app/agenda/page";
 import SponsorsPage from "@/app/sponsors/page";
 import VenuePage from "@/app/venue/page";
@@ -12,6 +13,7 @@ import "@/app/styles/global.css";
 const ROUTES = {
   "/": HomePage,
   "/tracks": TracksPage,
+  "/team": TeamPage,
   "/agenda": AgendaPage,
   "/sponsors": SponsorsPage,
   "/venue": VenuePage,
