@@ -51,6 +51,7 @@ export const organizingTeam = {
       name: "Mauricio Arroyo",
       role: "Organizing Committee",
       accent: "cyan",
+      image: "/images/team/mauricio-arroyo.png",
     },
   ],
   collaborators: [
