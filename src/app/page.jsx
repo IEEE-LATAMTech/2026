@@ -35,7 +35,7 @@ export default function HomePage({ onNavigate }) {
                 </div>
               </div>
               <p className="hero-subtitle">
-                Convergence: Cybersecurity, AI, trust, and decentralized systems in a
+                Convergence: Cybersecurity, AI, trust, and advanced computing in a
                 premium summit experience for Latin American technical leaders.
               </p>
               <div className="hero-meta">
