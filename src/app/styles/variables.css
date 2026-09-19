@@ -1,0 +1,28 @@
+:root {
+  color-scheme: dark;
+  --brand-deep-blue: #0B1221;
+  --brand-action-cyan: #00D4FF;
+  --brand-accent-orange: #F37021;
+  --brand-white: #FFFFFF;
+  --surface: var(--brand-deep-blue);
+  --surface-lowest: var(--brand-deep-blue);
+  --surface-low: rgba(255, 255, 255, 0.04);
+  --surface-high: rgba(255, 255, 255, 0.08);
+  --surface-highest: rgba(255, 255, 255, 0.12);
+  --surface-line: rgba(255, 255, 255, 0.14);
+  --text-main: var(--brand-white);
+  --text-muted: rgba(255, 255, 255, 0.74);
+  --text-dim: rgba(255, 255, 255, 0.58);
+  --blue: var(--brand-action-cyan);
+  --blue-strong: var(--brand-action-cyan);
+  --orange: var(--brand-accent-orange);
+  --orange-strong: var(--brand-accent-orange);
+  --cyan: var(--brand-action-cyan);
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --shell: 1280px;
+  --shadow-blue: 0 0 40px rgba(0, 212, 255, 0.22);
+  --shadow-orange: 0 0 40px rgba(243, 112, 33, 0.18);
+  --shadow-cyan: 0 0 40px rgba(0, 212, 255, 0.2);
+}

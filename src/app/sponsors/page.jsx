@@ -1,0 +1,40 @@
+import { sponsorTiers } from "@/app/datos";
+import PageIntro from "@/components/PageIntro";
+import SponsorTier from "@/components/SponsorTier";
+
+export default function SponsorsPage({ onNavigate }) {
+  return (
+    <main className="page-main shell">
+      <PageIntro
+        eyebrow="Recognized & Endorsed"
+        title="Sponsors & Strategic Allies"
+        text="Organizations supporting and endorsing IEEE CS LATAMTech Summit Costa Rica 2026."
+      />
+
+      <div className="stack-xl">
+        {sponsorTiers.map((tier) => (
+          <SponsorTier key={tier.tier} tier={tier} />
+        ))}
+
+        <section className="glass-card sponsor-cta accent-orange">
+          <div>
+            <div className="code-label">Partnership Opportunities</div>
+            <h2>Support the next generation of regional engineering.</h2>
+            <p>
+              Sponsorship is framed as infrastructure investment: student grants,
+              lab access, mentorship pipelines, and technical brand positioning.
+            </p>
+          </div>
+          <div className="cta-actions">
+            <a
+              className="button button-primary"
+              href="mailto:amercado.rios1905@gmail.com?subject=IEEE%20CS%20LATAMTech%20Summit%20Costa%20Rica%202026"
+            >
+              Contact the Organizers
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}

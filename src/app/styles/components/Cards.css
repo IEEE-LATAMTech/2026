@@ -1,0 +1,60 @@
+.meta-pill {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--surface-line);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 999px;
+  color: var(--text-main);
+}
+
+.meta-pill .material-symbols-outlined {
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+
+.signal-card,
+.feature-card,
+.route-card {
+  flex: 1 1 220px;
+}
+
+.signal-card {
+  border-left: 2px solid var(--surface-line);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 18px;
+}
+
+.signal-card strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.feature-card,
+.route-card {
+  padding: 28px;
+  border-radius: var(--radius-lg);
+}
+
+.feature-card h3,
+.route-card h3 {
+  margin: 0 0 14px;
+  font-size: 1.4rem;
+  line-height: 1.15;
+}
+
+.route-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (max-width: 560px) {
+  .feature-card,
+  .route-card {
+    padding: 20px;
+  }
+}
